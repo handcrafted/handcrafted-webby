@@ -1,0 +1,9 @@
+
+SITE.page_defaults['exclude_html_extention'] = true 
+
+task :default => :build
+
+desc 'deploy the site to the webserver'
+task :deploy => [:build, 'deploy:rsync']
+
+# EOF
