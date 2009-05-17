@@ -1,6 +1,7 @@
 ---
 extension: html
-filter:    haml
+filter:
+  - haml
 ---
 !!! Strict
 %html{:xmlns => "http://www.w3.org/1999/xhtml", :lang => "en", :'xml:lang' => "en"}
@@ -11,6 +12,7 @@ filter:    haml
     %meta{:name => "lang", :content => "en"}
     %link{ :href => "css/site.css", :rel => "stylesheet", :type => "text/css" }
     = render :partial => "shared/javascript"
+    = render :partial => "shared/ie6update"
     = render :partial => "shared/head_seo"
   %body
     = render :partial => "shared/nav_main"

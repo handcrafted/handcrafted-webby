@@ -1,0 +1,7 @@
+---
+filter: erb
+---
+<!--[if IE 6]>
+<script type="text/javascript">var IE6UPDATE_OPTIONS = { icons_path: "ie6update/images/" }</script>
+<script type="text/javascript" src="ie6update/jquery.ie6update.js"></script>
+<![endif]-->
