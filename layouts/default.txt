@@ -6,14 +6,12 @@ filter:    haml
 %html{:xmlns => "http://www.w3.org/1999/xhtml", :lang => "en", :'xml:lang' => "en"}
   %head
     %title= @page.title
-    - if @page.description
-      %meta{:name => "description", :content => "#{@page.description}"}
-    - if @page.keywords
-      %meta{:name => "keywords", :content => "#{@page.keywords}"}
+    = render :partial => "shared/head_content_optimization"
     %meta{:'http-equiv' => "Content-Type", :content => "text/html; charset=utf-8"}
     %meta{:name => "lang", :content => "en"}
-    %link{ :href => "", :rel => "stylesheet", :type => "text/css" }
+    %link{ :href => "css/site.css", :rel => "stylesheet", :type => "text/css" }
     = render :partial => "shared/javascript"
+    = render :partial => "shared/head_seo"
   %body
     = render :partial => "shared/nav_main"
     = @content

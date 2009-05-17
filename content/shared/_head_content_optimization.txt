@@ -1,0 +1,7 @@
+---
+filter: haml
+---
+- if @page.description
+  %meta{:name => "description", :content => @page.description}
+- if @page.keywords
+  %meta{:name => "keywords", :content => @page.keywords}
