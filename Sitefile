@@ -1,4 +1,4 @@
-
+SITE.root_url = "http://example.com"
 SITE.page_defaults['exclude_html_extention'] = true 
 
 task :default => :build
