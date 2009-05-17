@@ -1,0 +1,8 @@
+---
+filter:    haml
+---
+#nav_main
+  %ul
+    - @pages.find(:all, :sort_by => 'title').each do |p|
+      %li
+        %a{:href => p.url}= p.title
