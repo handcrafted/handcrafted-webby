@@ -10,7 +10,7 @@ filter:
     = render :partial => "shared/head_content_optimization"
     %meta{:'http-equiv' => "Content-Type", :content => "text/html; charset=utf-8"}
     %meta{:name => "lang", :content => "en"}
-    %link{ :href => "css/site.css", :rel => "stylesheet", :type => "text/css" }
+    %link{ :href => "stylesheets/styles.css", :rel => "stylesheet", :type => "text/css" }
     = render :partial => "shared/javascript"
     = render :partial => "shared/ie6update"
     = render :partial => "shared/head_seo"
